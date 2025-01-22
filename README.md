@@ -27,4 +27,4 @@ This project is a submission for the [Frontend Mentor](https://www.frontendmento
 
 ### Links
 
-- Live Site URL: [My implementation](https://frontend-mentor-nft-preview-card-component-ten.vercel.app/)
+- Live Site URL: [My implementation](https://3-column-preview-card-component-eight-pearl.vercel.app)
