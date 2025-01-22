@@ -86,8 +86,9 @@ button{
     cursor: pointer;
     font-family: var(--body-font);
     display: inline-block;
-    padding: 12px 30px;
+    padding: 13px 30px;
     margin: auto;
+    font-size: 15px;
 }
 
 .card_1{
