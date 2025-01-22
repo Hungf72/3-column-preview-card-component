@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root{
+    --body-font: 'Lexend Deca', sans-serif;
+    --heading-font: 'Big Shoulders Display', cursive;
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-White: hsl(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+html{
+    height: 100vh;
+    display: grid;
+    align-items: center;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: var(--body-font);
+    background-color: var(--Transparent-White);
+    line-height: 1.5;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+/* Container */
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 945px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h2{
+    font-family: var(--heading-font);
+}
+
+
+.card_1, .card_2, .card_3 {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+
+.card_1 img, .card_2 img, .card_3 img {
+    width: 60px; 
+    margin-right: 20px; 
+}
+
+.card_1 h2, .card_2 h2, .card_3 h2 {
+    font-size: 2.7rem;
+    font-weight: 700;
+    margin-top: 25px;
+    color: var(--Very-light-gray);
+}
+
+.card_1 p, .card_2 p, .card_3 p {
+    font-size: 0.85rem;
+    font-weight: 400;
+    margin: 10px 0;
+    line-height: 1.75;
+    color: var(--Transparent-White);
+    margin-top: 25px;
+}
+
+button{
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    font-family: var(--body-font);
+    display: inline-block;
+    padding: 12px 30px;
+    margin: auto;
+}
+
+.card_1{
+    background-color: var(--Bright-orange);
+    display: inline-block;
+    flex-direction: column;
+    border-radius: 10px 0 0 10px;
+    color: white;
+}
+
+.card_2{
+    background-color: var(--Dark-cyan);
+    display: inline-block;
+    flex-direction: column;
+    color: white;
+}
+
+.card_3{
+    background-color: var(--Very-dark-cyan);
+    display: inline-block;
+    flex-direction: column;
+    border-radius: 0px 10px 10px 0px;
+    color: white;
+}
+
+/* Button Design */
+
+.card_1 button, .card_2 button, .card_3 button{
+    margin-top: 70px;
+}
+
+.card_1 button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: var(--body-font);
+    display: inline-block;
+    color: var(--Bright-orange);
+}
+
+.card_1 button:hover{
+    color: var(--Very-light-gray);
+    background: transparent;
+    border: 2px solid #ffffff;
+    transition-duration: .4s;
+}
+
+.card_2 button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: var(--body-font);
+    display: inline-block;
+    color: var(--Dark-cyan);
+}
+
+.card_2 button:hover{
+    color: var(--Very-light-gray);
+    background: transparent;
+    border: 2px solid #ffffff;
+    transition-duration: .4s;
+}
+
+.card_3 button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: var(--body-font);
+    display: inline-block;
+    color: var(--Very-dark-cyan);
+}
+
+.card_3 button:hover{
+    color: var(--Very-light-gray);
+    background: transparent;
+    border: 2px solid #ffffff;
+    transition-duration: .4s;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1000px){
+    .container{
+        flex-direction: column;
+    }
+
+    .card_1, .card_2, .card_3{
+        margin-top: 20px;
+    }
+
+    .main {padding: 30px 0 50px;}
+
+    .container {display: block;}
+
+    .box {
+        width: 375px;
+        padding: 50px;
+        margin: 0 auto;
+    }
+}
